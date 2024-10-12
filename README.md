@@ -1,0 +1,1 @@
+Welcome to my first web project! This project is a simple, responsive website designed to showcase my skills in HTML, CSS, and JavaScript. The website includes several sections such as a homepage, an about page and a contact form.
