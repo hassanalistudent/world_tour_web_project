@@ -1,0 +1,517 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    line-height: 1.7;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+p,li{
+    font-size: 1.9rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1{
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h2,h3{
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+
+
+/* ############################## utility classes ############################## */
+.container{
+    width:75%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* ################   font ##################### */
+.lg_font{
+    font-size: 3.2rem;
+}
+.mid_font{
+    font-size: 2.4rem;
+}
+/* ################################## color ############# */
+.color_red{
+    color: #e05151;
+}
+.color_gray{
+    color: #614444;
+}
+.color_black{
+    color: black;
+}
+.color_light{
+    color: #f4f4f4;
+}
+.btn{
+    text-align: center;
+    color: #e05151;
+    padding: 0.5em;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.primery_btn{
+    background-color: #fff;
+    border-radius: 25px;
+}
+.secondry_btn{
+    border: 1pt solid #e05151;
+    border-radius: 25px;
+}
+.bg_dark{
+    background-color: #241e1e;
+}
+
+/* ############################ header stylkng ######################### */
+.header{
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 95vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../pictures/Header_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: visible;
+    
+}
+.navbar .logo{
+    float: left;
+    width: 50px;
+    height:inherit;
+    margin-top: 1rem;
+}
+.navbar .list{
+    float: right;
+    margin-top: 1rem;
+}
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.navitems{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+.navbar{
+    padding: 1rem;
+    z-index: 1000;
+    top: 0;
+}
+.navbar .navitems a:link,
+.navbar .navitems a:visited{
+    color: #f4f4f4;
+}
+.navbar .navitems a:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: 0.1em;
+    color: #f4f4f4;
+    text-decoration-color: #f4f4f4;
+}
+/* ######################### header content styling ############################## */
+.header_text{
+    position: absolute;
+    display: block;
+    justify-items: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+}
+.header_text h1,
+.header_text p{
+    text-transform: uppercase;
+}
+.header_text a:hover{
+    background-color: #f2f2f2;
+}
+/* ########################################## section styling ################################## */
+section.sec1{
+    width: 100vw;
+    padding: 10rem 0;
+    background-color: #f1f1f1;
+}
+section.sec1 div.part{
+    height: 400px;
+    box-shadow: 0px 0px 20px 0px #aaa;
+    background-color: #ffff;
+}
+div.part div.img,div.part div.text{
+    width: 50%;
+    height: 100%;
+}
+div.part1 div.img,div.part2 div.text{
+    float: left;
+}
+div.part2 div.img,div.part1 div.text{
+    float: right;
+}
+div.part div.text{
+    padding: 1.5em;
+    text-align: justify;
+}
+div.part1{
+    margin-bottom: 10rem;
+}
+.sec1 .part div.img img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.part a:hover{
+    background-color: #f2f2f2;
+}
+.part::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ############################### features section #############################3 */
+.box_wreper{
+    margin: 10rem 0;
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+div.box_wreper::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+div.box{
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    color: #fff;
+    padding: 1.5em;
+}
+.box_wreper .box1,.box_wreper .box3{
+    background-color: #e05151;
+}
+.box_wreper .box2{
+    background-color: #000;
+}
+/* ############################### footer #############################3 */
+footer{
+    background-color: #241e1e;
+    color: #bbb;
+    text-align: center;
+}
+footer i{
+    margin: 0.5em;
+}
+.fa-brands:hover{
+    color: #fff;
+}
+/* ######################################## about styling ########################### */
+.about{
+    padding: 5rem 0;
+}
+.about h2{
+    border-bottom: 4px solid #e05151;
+}
+.about p{
+    text-align: justify;
+}
+.about_wreper{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+.about_wreper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+div.left{
+    float:left ;
+    width: 50%;
+}
+div.right{
+    float: right;
+    width: 50%;
+}
+.branches li::before{
+    content: '\2713';
+    color: #e05151;
+    font-weight: 700;
+    padding-right: 1rem;
+}
+.count .count_itme{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.count_itme p{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.count::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.count_itme span{
+    color: #e05151;
+    font-weight: 700;
+}
+/* #################################### banar styling ################################### */
+.banar{
+    color: #ffff;
+    background: rgba(191, 44, 100, 1.0);
+    background: linear-gradient(135deg, rgba(191, 44, 100, 1.0), rgba(239, 98, 33, 1.0));
+    box-shadow: 5px 5px 10px 0px #aaa;
+    
+}
+.banar p{
+    font-weight: 700;
+    float: left;
+    width: 65%;
+    margin: 2.3rem;
+}
+.banar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.banar .c_btn{
+    color: #fff;
+    border: 4px solid white;
+    float: right;
+    margin: 0.8rem;
+    letter-spacing: 0.15em;
+    padding: 0.5em 2em;
+}
+/* ######################## contect page ################################### */
+section.contect_pg{
+    background-color: #f2f2f2;
+    padding: 10rem 0;
+    
+}
+.cnt_wreper i{
+    display: inline-block;
+    margin-right: 1rem; 
+}
+.cnt_wreper h2{
+    display: inline-block;
+}
+/* ########################### .company_address styling #########################33 */
+.cnt_wreper .company_address{
+    height: 790px;
+    width: 49%;
+    float: left;
+    background-color: #ffff;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.cnt_wreper .company_img{
+    height:350px;
+    max-width: 100%;
+}
+.company_address img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cnt_wreper::after{
+     content: "";
+     display: block;
+     clear: both;
+}
+.cnt_wreper .address_gr{
+    margin-bottom: 3rem;
+}
+/* ################################ form styling ################################### */
+.cnt_wreper .contect_form{
+    height: 790px;
+    font-size: 1.6rem;
+    width: 49%;
+    float: right;
+    background-color: #ffff;
+    padding: 1rem
+}
+.contect_form h1{
+    border-bottom: 4px solid #e05151;
+}
+.contect_form form input{
+    width: 100%;
+    padding: 0.5em;
+}
+.contect_form form label::after{
+    content: "* ";
+    color: #e05151;
+}
+.contect_form form textarea{
+    width: 100%;
+    height: 320px;
+    padding: 1rem;
+}
+.contect_form form .form_submit{
+    display: block;
+    padding: 0.5em 3em;
+    background-color: #e05151;
+    margin: 0 auto;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+/* ########################### media Quries ########################################### */
+@media (max-width: 500px)
+{
+    html{
+        font-size:35%;  
+    }
+    .navbar .list,.navbar .logo{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .navbar .logo{
+        margin: 0 auto;
+    }
+    section.sec1 .part div.text,section.sec1 .part div.img{
+        float:none;
+        display: block;
+        width: 100%;
+        height: 49%;
+        margin-bottom: 1rem;
+    }
+    .box_wreper{
+       box-shadow: none;
+    }
+    .features .box_wreper .box{
+        float: none;
+        width: 100%;
+        margin-bottom: 5rem;
+        box-shadow: 0px 0px 20px 0px #aaa;
+    }
+    .about .banar p{
+        float: none;
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: 500;
+    }
+    .about .banar .c_btn{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        float: none;
+        font-weight: 500;
+        text-align: center;
+        padding: 1rem;
+    }
+    .cnt_wreper .company_address,.cnt_wreper .contect_form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    .cnt_wreper .company_address{
+        margin-bottom: 1rem;
+    }
+
+}
+@media (min-width: 501px) and (max-width: 768px){
+    html{
+        font-size: 45%;
+    }
+    .navbar .list,.navbar .logo{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .navbar .logo{
+        margin: 0 auto;
+    }
+    section.sec1 .part div.text,section.sec1 .part div.img{
+        float:none;
+        display: block;
+        width: 100%;
+        height: 49%;
+    }
+    .box_wreper{
+       box-shadow: none;
+    }
+    .features .box_wreper .box{
+        float: none;
+        width: 100%;
+        margin-bottom: 5rem;
+        box-shadow: 0px 0px 20px 0px #aaa;
+    }
+    .about .banar p{
+        float: none;
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: 500;
+    }
+    .about .banar .c_btn{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        float: none;
+        font-weight: 500;
+        text-align: center;
+        padding: 1rem;
+    }
+    .cnt_wreper .company_address,.cnt_wreper .contect_form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    .cnt_wreper .company_address{
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width:769px) and (max-width:1200px)
+{
+    html{
+        font-size: 50.25%;
+    }
+    .part .text h2{
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+    .about .banar p{
+        float: none;
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: 500;
+    }
+    .about .banar .c_btn{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        float: none;
+        font-weight: 500;
+        text-align: center;
+        padding: 1rem;
+    }
+}
